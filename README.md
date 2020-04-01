@@ -8,13 +8,18 @@
 # Hamedal Software Development Kit (SDK)
 
 ## Prerequisites
-Hamedal SDK supportes the following node versions: 
+
+Hamedal SDK supportes the following node versions: (https://cdn.npm.taobao.org/dist/node/v12.16.1/node-v12.16.1.tar.gz)
 
 - 13.0.0
 
 Hamedal SDK supportes the following electron versions: 
 
 - 7.2.1
+
+```
+  npm install electron 13.0.0
+```
 
 We recommend using nvm as your node version manager [https://github.com/creationix/nvm](https://github.com/creationix/nvm).
 
