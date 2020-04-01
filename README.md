@@ -18,7 +18,7 @@ Hamedal SDK supportes the following electron versions:
 - 7.2.1
 
 ```
-  npm install electron 13.0.0
+  npm install electron 7.2.1
 ```
 
 We recommend using nvm as your node version manager [https://github.com/creationix/nvm](https://github.com/creationix/nvm).
