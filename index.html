@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title >Hamedal Falcon</title>
+</head>
+
+<body>
+    <h1 align="center">Hamedal Falcon</h1>
+
+    <div id="my_camera"></div>
+
+    <script type="text/javascript" src="./webcam.js"></script>
+
+    <script language="JavaScript">
+        var Webcam = require("webcamjs");
+        Webcam.set({
+            width: 350,
+            height: 250,
+            image_format: 'jpeg',
+            jpeg_quality: 90,
+            constraints: {
+                width: { exact: 350 },
+                height: { exact: 250 }
+            }
+        });
+        Webcam.attach( '#my_camera' );
+
+    </script>
+
+    <div id="my_falcon"></div>
+    <form>
+        </br>
+        <input id="setAI" type="checkbox" value="AI-Mode">
+        <label>AI-Mode</label>
+      </br></br>
+        <label>People Counting: </label>&ensp;
+        <a  id="test">未知</a>&ensp;&ensp;
+       <input id="peopleCount" type="button" value="Check">
+
+    </form>
+    <script language="JavaScript">
+
+        var Hamedal = require('hamedal-sdk-test');
+
+        var cameras =  Hamedal.devices();
+
+        if (cameras.length == 0){
+            console.log('unable');
+        }else {
+            console.log(cameras);
+        }
+        cameraInfo = cameras[0];
+
+        var falcon = new Hamedal.FalconCamera(cameraInfo);
+//设置AI-Mode
+        falcon.isAIModeEnabled().then(value => {
+
+           if (value = 1) {
+             document.getElementById("setAI").checked = true;
+           }else{
+             document.getElementById("setAI").chacked = false;
+           }
+        }).catch(reason => {
+            console.log(reason);
+        });
+// 检查画面内人数
+        falcon.getBodyCount().then(value => {
+            document.getElementById("test").innerHTML = value;
+        }).catch(reason => {
+            console.log(reason);
+        });
+
+        document.getElementById("setAI").addEventListener("click", function(e){
+
+            SetAIMode();
+
+        },false);
+
+        document.getElementById("peopleCount").addEventListener("click", function(e){
+
+          chackpeopleCount();
+
+        },false);
+
+        function SetAIMode(){
+
+            if (document.getElementById("setAI").checked) {
+
+              this.falcon.enableAIMode().then(value => {
+
+                  document.getElementById("setAI").checked = true;
+              }).catch(reason => {
+                  console.log(reason);
+              });
+            }else {
+              this.falcon.disableAIMode().then(value => {
+                document.getElementById("setAI").checked = false;
+              }).catch(reason => {
+                  console.log(reason);
+              });
+            }
+        }
+
+        function chackpeopleCount(){
+          this.falcon.getBodyCount().then(value => {
+
+              document.getElementById("test").innerHTML = value;
+              this.setInterval("chackpeopleCount",1000);
+          }).catch(reason => {
+              console.log(reason);
+          });
+        }
+
+        
+    </script>
+
+    </body>
+
+    </html>
