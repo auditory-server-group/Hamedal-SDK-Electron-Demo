@@ -32,22 +32,34 @@ Then you can install and start using the huddly sdk you need first install it an
 Start by creating the sdk and the transport
 
 ```javascript
-var Hamedal = require('hamedal-sdk-test');
+var Hamedal = require('hamedal-falcon');
 
 var cameras = Hamedal.devices();
 
 // Create instances of hamedal device you want to use
 var falcon = new Hamedal.FalconCamera(cameraInfo);
 
+```
 Then you should be good to go. All the actions on the cameraManager are done after the attach event. For example, to change the camera model, call `setAIMode` when the camera is attached.
 
-```
+```javascript
+
 falcon.enableAIMode().then(value => {
+
   console.log(value);
+  
 }).catch(reason => {
+
   console.log(reason);
+  
 });
+
+
 ```
+## Here is demo screenshot image.
+
+<img class="hamedal-demo" width="200px" height="auto" src="https://cdn.shopify.cn/s/files/1/0119/8424/0736/files/2020-04-01_4.49.41.png?v=1585731079" />
+
 ## Issues
 If you have a question or found a bug please [open an issue](https://github.com/hamedal-sdk/issues). Thank you
 
