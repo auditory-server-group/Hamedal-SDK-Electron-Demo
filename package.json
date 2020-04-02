@@ -20,7 +20,7 @@
   "author": "Auditoryworks",
   "dependencies": {
     "prebuild-install": "^5.3.3",
-    "hamedal-sdk-test": "^1.1.0",
+    "hamedal-falcon": "^1.0.0",
     "webcamjs": "^1.0.6"
   },
   "devDependencies": {
