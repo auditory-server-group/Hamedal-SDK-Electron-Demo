@@ -63,7 +63,7 @@ falcon.enableAIMode().then(value => {
 ```
 ## Here is demo screenshot image.
 
-<img class="hamedal-demo" width="200px" height="auto" src="https://cdn.shopify.cn/s/files/1/0119/8424/0736/files/2020-04-01_5.23.02.png?v=1585733087" />
+<img class="hamedal-demo" width="200px" height="auto" src="https://cdn.shopify.cn/s/files/1/0119/8424/0736/files/2020-04-01_5.23.02.png?v=1585794843" />
 
 ## Issues
 If you have a question or found a bug please [open an issue](https://github.com/hamedal-sdk/issues). Thank you
