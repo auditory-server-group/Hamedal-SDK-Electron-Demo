@@ -1,8 +1,8 @@
 {
-  "name": "hamedal-falcon",
-  "productName": "Hamedal-Falcon",
+  "name": "hamedal-falcon-test",
+  "productName": "Hamedal-Falcon-Test",
   "version": "1.0.0",
-  "description": "Hamedal-Falcon",
+  "description": "Hamedal-Falcon-Test",
   "license": "ISC",
   "main": "main.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "author": "Auditoryworks",
   "dependencies": {
     "prebuild-install": "^5.3.3",
-    "hamedal-falcon": "^1.0.0",
+    "hamedal-falcon": "^1.0.1",
     "webcamjs": "^1.0.6"
   },
   "devDependencies": {
