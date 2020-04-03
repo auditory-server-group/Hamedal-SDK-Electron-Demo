@@ -1,8 +1,8 @@
 {
-  "name": "hamedal-falcon-test",
-  "productName": "Hamedal-Falcon-Test",
+  "name": "hamedal-sdk-electron-demo",
+  "productName": "Hamedal-SDK-Electron-Demo",
   "version": "1.0.0",
-  "description": "Hamedal-Falcon-Test",
+  "description": "Hamedal-SDK-Electron-Demo",
   "license": "ISC",
   "main": "main.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "author": "Auditoryworks",
   "dependencies": {
     "prebuild-install": "^5.3.3",
-    "hamedal-falcon": "^1.0.1",
+    "hamedal-sdk": "^1.0.0",
     "webcamjs": "^1.0.6"
   },
   "devDependencies": {

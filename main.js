@@ -13,7 +13,7 @@ function createWindow () {
 //创建浏览器窗口,宽高自定义具体大小你开心就好
 mainWindow = new BrowserWindow({
 
-    title: 'Hamedal Falcon',
+    title: 'Hamedal-SDK-Electron-Demo',
     width: 365,
     height: 500,
     resizable: false,
