@@ -18,7 +18,7 @@ Hamedal SDK supportes the following electron versions:
 - 7.2.1
 
 ```
-  npm install electron 7.2.1
+  npm install electron@7.2.1
 ```
 
 We recommend using nvm as your node version manager [https://github.com/creationix/nvm](https://github.com/creationix/nvm).
@@ -31,7 +31,9 @@ After you've setup nvm run
 ## Get started
 Then you can install and start using the huddly sdk you need first install it and the transport
 ```
-  npm install @hamedal-sdk
+  npm install hamedal-sdk
+  npm install webcamjs
+  npm start
 ```
 
 Start by creating the sdk and the transport
