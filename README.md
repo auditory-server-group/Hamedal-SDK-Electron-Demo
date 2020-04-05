@@ -36,6 +36,7 @@ Then you can install and start using the huddly sdk you need first install it an
   npm start
 ```
 
+## How to Use hamedal-sdk
 Start by creating the sdk and the transport
 
 ```javascript
