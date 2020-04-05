@@ -31,7 +31,9 @@ After you've setup nvm run
 ## Get started
 Then you can install and start using the huddly sdk you need first install it and the transport
 ```
-  npm install @hamedal-sdk
+  npm install hamedal-sdk
+  //enter( ../hamedal-sdk/ )filePath and start
+  npm start
 ```
 
 Start by creating the sdk and the transport
