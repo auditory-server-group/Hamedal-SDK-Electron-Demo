@@ -29,10 +29,9 @@ After you've setup nvm run
 ```
 
 ## Get started
-Then you can install and start using the huddly sdk you need first install it and the transport
+Then you can install and start using the hamedal sdk you need first install it and the transport(make sure you have connect hamedal device)
 ```
-  npm install hamedal-sdk
-  npm install webcamjs
+  npm install 
   npm start
 ```
 
